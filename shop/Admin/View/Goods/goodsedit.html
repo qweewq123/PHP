@@ -1,0 +1,146 @@
+<extend name="Common/base" />
+<block name="main">
+<div class="mainbar">
+    <div class="page-head">
+        <div class="bread-crumb pull-left">
+             <a href="__MODULE__/Index/dashboard"><i class="icon-home"></i> 首页</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12">
+        <div class="container-fluid">
+            <div class="widget wred">
+                <div class="widget-head">
+                    <div class="pull-left">品牌修改</div>
+                        <div class="widget-icons pull-right">
+                            <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <div class="padd">
+                        <div class="form profile">
+                           <form  action="{:U('goods/goodsupdate')}"  method="post" enctype="multipart/form-data">
+
+        <table  width="100%">
+                        <tr>
+                
+                <td><input class='txt' type="hidden" name='id' value='{$data.id}'></td>
+            </tr>
+           
+            <tr>
+                <td>商品名</td>
+                <td><input class='txt' type="text" name='proname' value='{$data.proname}'></td>
+            </tr>
+            <tr>
+                <td>商品分类</td>
+                <td>
+                    {$catsSelect}
+                </td>
+            </tr>
+            <tr>
+                <td>商品价格</td>
+                <td><input  class='txt' type="text" name='price' value='{$data.price}'></td>
+            </tr>
+
+
+              <tr>
+                <td>商品库存</td>
+                <td><input class='txt' type="text" name='store' value='{$data.store}'></td>
+            </tr>
+      
+            <tr>
+                <td>商品描述</td>
+                  <!--这里就是我们放编辑器的地方-->    
+                   <td><textarea name="des" id="{$data.des}" cols="30" rows="5" >{$data.des}</textarea></td>
+            </tr>
+      
+            <tr>
+                <td>商品状态</td>
+                <td><select name="state" id="">
+                
+                    <option value="1" selected>新品</option>
+                    <option value="2">热销</option>
+                    <option value="3">促销</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>商品图片</td>
+                <td><input type="file" name='image1' value='{$data.image1}'></td>
+            </tr>
+                 <tr>
+                <td>商品图片</td>
+                <td><input type="file" name='image2' value='{$data.image2}'></td>
+            </tr>
+            
+               <tr>
+                <td>商品图片</td>
+                <td><input type="file" name='image3' value='{$data.image3}'></td>
+            </tr>
+             <!--  <tr>
+                <td>商品图片</td>
+                <td><input type="file" name='image4' value='{$data.image4}'></td>
+            </tr> -->
+            <tr>
+                <td></td>
+                <td align=center><input type="submit" value="提交"></td>
+            </tr>
+
+        </table>
+    </form>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll to top --> <span class="totop"><a href="#"><i
+        class="icon-chevron-up"></i></a></span> </block>
+<block name="jslink">
+    <script>
+       
+
+        /**
+         * 表单验证
+         */
+        $('.form-horizontal').validate({
+            errorElement : 'span',
+            errorClass : 'help-block',
+            focusInvalid : true,
+            highlight : function(element) {
+                $(element).closest('.form-group').addClass('has-error');
+            },
+            rules : {
+                brand_name : {
+                    required : true,
+                  
+                },
+            <!--
+                nickname:{
+                    required : true,
+                    maxlength:100
+                },
+                password : {
+                    required : true,
+                    rangelength:[6,16]
+                },
+                reqPwd:{
+                    required : true,
+                    rangelength:[6,16],
+                    equalTo:'#password'
+                },
+                email:{
+                    maxlength:255,
+                    email:true
+                }
+                -->
+            },
+            success : function(label) {
+                label.closest('.form-group').removeClass('has-error').addClass('has-success');
+                label.remove();
+            }
+        })
+    </script>
+</block>

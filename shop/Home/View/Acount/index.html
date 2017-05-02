@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://store.meizu.com/orders/add -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>确认订单-SS商城</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="__PUBLIC__/home/Acount/js/jquery-1.7.2.js"></script>
+	<link href="http://store.res.meizu.com/resources/php/store/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="http://store.res.meizu.com/resources/php/store/favicon.ico" rel="icon" type="image/x-icon">
+   
+	<meta name="keywords" content="SS商城">
+	<meta name="description" content="SS商城">
+
+	<!-- common css -->
+	
+    <link rel="stylesheet" href="__PUBLIC__/home/Acount/css/site-base.css">
+
+
+	<link rel="stylesheet" href="__PUBLIC__/home/Acount/css/order.css">
+	<link type="tex__PUBLIC__/home/Acount/css" href="__PUBLIC__/home/Acount/css/dialog.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="__PUBLIC__/home/Acount/css/citys.css">
+	<link rel="stylesheet" href="__PUBLIC__/home/Acount/css/order_add_new.css">
+
+</head>
+<body>
+<!-- common header -->
+<include file="Common/header"/>
+
+<!--MZstore-->
+
+<div id="storeContainer">
+	<div class="mz_content clearfix">
+		<div class="order_nav">
+			<div class="order_icons n1 active" style="background:#ccc;color:#000">1 我的购物车</div>
+			<div class="order_icons n2 active" style="background:#ccc;color:#000">2 填写核对订单信息</div>
+			<div class="order_icons n3" style="background:#ccc;color:#000">3 成功提交订单</div>
+		</div>
+		
+    <!-- 默认收货人信息 -->
+     <div class="order_title" id="id" style="width:150px; cursor:pointer" >
+       <b>默认收货人信息</b>
+
+     
+    </div>
+     <div class="order_title" id="did" style="cursor:pointer;margin-top:20px;width:150px;">
+      <b>添加收货人信息</b>
+
+      
+    </div>
+ <div id="old" style="display:none">
+    <div class="line"></div>
+    <form method="post" action="__MODULE__/Sts/insert" id="realFrom">
+    
+    <div class="user_msg"  >
+   
+      
+      <div class="user_address">
+        
+        <div class="add_form" id="addFrom" style="margin-top:-20px">
+          <div class="tr">
+            <div class="th">收件人</div>
+            <div class="td"><input type="text" value="{$vip.getman}" class="order_input" name="getman" maxlength="12" placeholder="长度不超过12个字"><i class="must" data-errname="consName"></i></div>
+          </div>
+          <div class="tr">
+            <div class="th">手机</div>
+            <div class="td"><input type="text" value="{$vip.phonenum}" class="order_input" name="phonenum" maxlength="11" placeholder="请输入11位手机号"><i class="must" data-errname="consPhone"></i></div>
+          </div>
+           <div class="tr">
+            <div class="th">邮编</div>
+            <div class="td"><input type="text" value="{$vip.code}" class="order_input" name="code" maxlength="6" placeholder="请输入邮编"><i class="must" data-errname="consPhone"></i></div>
+          </div>
+      <div class="xg1" style="font-size:16;color:red;"><div class="add_address" id="addAddress"><span class="err_msg" data-errname="form_validation"></span></div></div>
+      
+      
+      <div class="dizhi" style="margin:15px 0px;display:block;">
+        <select id="province1" name="province">
+          <option  value="">{$vip.province}</option>
+        </select>
+        <select id="city1" name="city">
+          <option  value="">{$vip.city}</option>
+        </select>
+        <select id="county1" name="county">
+          <option  value="">{$vip.county}</option>
+        </select>
+        <select id="xiang1" name= "xiang">
+          <option  value="">{$vip.xiang}</option>
+        </select><br><br>
+        
+      
+        请填写详细地址：<br><br>
+        <textarea name="address" id="address" class="adr" value="" style="width:400px;height:50px;" placeholder="请填写详细的地址">{$vip.address}</textarea></div>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="order_title">
+      确认订单信息
+    </div>
+
+    <table cellpadding="0" cellspacing="0" class="product_table">
+      <thead>
+        <tr>
+          <th width="150">商品</th>
+          <th width="500" class="supplier">
+            <div class="title">
+            <div class="title">
+              供应商：魅族                <span class="supplier_tips">
+                  <span class="order_icons triangle"></span>
+                  <span class="content">由“魅族”负责发货，并提供售后服务</span>
+                </span>
+            </div>
+            </div>
+          </th>
+          <th width="200">单价</th>
+          <th width="200">数量</th>
+          <th>小计</th>
+        </tr>
+      </thead>
+        
+      <tbody>
+      <foreach name="sess" item="sess1">
+            <tr>
+                <td class="img"><img src="__PUBLIC__/Uploads/{$sess1.image1}"></td>
+                <td class="detial">
+                    <p class="title">
+                        <a target="_blank" href="http://store.meizu.com/item/meizu_mx5.html">
+                            <!--如果是套餐则显示套餐-->
+                            {$sess1.proname}                      </a>
+                    </p>
+                </td>
+                <td class="price">
+                  <input style="border:0px" type="text" name="price" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¥&nbsp;{$sess1.price1}">                                  </td>
+                <td>{$sess1.num}</td>
+                <td class="price">¥&nbsp;{$sess1.price}</td>
+            </tr>
+             </foreach>
+                  </tbody>
+                 
+    </table>
+
+    <div class="order_total">
+      <div class="tr">
+        <div class="th">总金额</div>
+        <div class="td"><input style="border:0px" type="text" name="price" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¥&nbsp;{$sum}.00"></div>
+      </div>
+    
+  
+      <div class="tr">
+        <div class="th">运费</div>
+        <div class="td">&nbsp;¥&nbsp;0.00</div>
+      </div>
+      <div class="line"></div>
+      <div class="tr">
+        <div class="th">应付：</div>
+        <div class="td total_price">¥&nbsp;<span id="totalPrice">{$sum}</span></div>
+      </div>
+  <input type="hidden"  name="sum" value="{$sum}"  >
+     <input type="hidden"  name="wang" value="zong"  >
+      <div class="tr">
+        <div class="order_btn primary" id="submitFrom"><input type="submit" style="background:#00C3F5;border:0px;font-size:25px;color:#fff;" value="提交订单"></div>
+      </div>
+    </div>
+
+</form>
+</div>
+<!-- 添加收货人信息 -->
+ 
+<div id="new" style="display:block">
+		<div class="line"></div>
+    <form method="post" action="__MODULE__/Sts/insert" id="realFrom">
+    
+		<div class="user_msg"  >
+   
+			
+			<div class="user_address">
+				
+				<div class="add_form" id="addFrom" style="margin-top:-20px">
+					<div class="tr">
+						<div class="th">收件人</div>
+						<div class="td"><input type="text" class="order_input" name="getman" maxlength="12" placeholder="长度不超过12个字"><i class="must" data-errname="consName"></i></div>
+					</div>
+					<div class="tr">
+						<div class="th">手机</div>
+						<div class="td"><input type="text" class="order_input" name="phonenum" maxlength="11" placeholder="请输入11位手机号"><i class="must" data-errname="consPhone"></i></div>
+					</div>
+					 <div class="tr">
+            <div class="th">邮编</div>
+            <div class="td"><input type="text" class="order_input" name="code" maxlength="6" placeholder="请输入邮编"><i class="must" data-errname="consPhone"></i></div>
+          </div>
+      <div class="xg" style="font-size:16;color:red;"><div class="add_address" id="addAddress"><div class="add_icon">+</div><span class="str">添加地址</span><span class="err_msg" data-errname="form_validation"></span></div></div>
+      
+      
+      <div class="dizhi" style="margin:15px 0px;display:none;">
+        <select id="province" name="province">
+          <option  value="">--请选择省--</option>
+        </select>
+        <select id="city" name="city">
+          <option  value="">--请选择市--</option>
+        </select>
+        <select id="county" name="county">
+          <option  value="">--请选择县--</option>
+        </select>
+        <select id="xiang" name= "xiang">
+          <option  value="">--请选择乡镇--</option>
+        </select><br><br>
+        
+      
+        请填写详细地址：<br><br>
+        <textarea name="address" id="address" class="adr" value="" style="width:400px;height:50px;" placeholder="请填写详细的地址"></textarea></div>
+        
+				</div>
+			</div>
+		</div>
+
+		<div class="order_title">
+			确认订单信息
+		</div>
+
+		<table cellpadding="0" cellspacing="0" class="product_table">
+			<thead>
+				<tr>
+					<th width="150">商品</th>
+					<th width="500" class="supplier">
+						<div class="title">
+						<div class="title">
+							供应商：魅族								<span class="supplier_tips">
+									<span class="order_icons triangle"></span>
+									<span class="content">由“魅族”负责发货，并提供售后服务</span>
+								</span>
+						</div>
+						</div>
+					</th>
+					<th width="200">单价</th>
+					<th width="200">数量</th>
+					<th>小计</th>
+				</tr>
+			</thead>
+        
+			<tbody>
+      <foreach name="sess" item="sess1">
+            <tr>
+                <td class="img"><img src="__PUBLIC__/Uploads/{$sess1.image1}"></td>
+                <td class="detial">
+                    <p class="title">
+                        <a target="_blank" href="http://store.meizu.com/item/meizu_mx5.html">
+                            <!--如果是套餐则显示套餐-->
+                            {$sess1.proname}                      </a>
+                    </p>
+                </td>
+                <td class="price">
+                  <input style="border:0px" type="text" name="price" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¥&nbsp;{$sess1.price1}">                                  </td>
+                <td>{$sess1.num}</td>
+                <td class="price">¥&nbsp;{$sess1.price}</td>
+            </tr>
+             </foreach>
+            			</tbody>
+                 
+		</table>
+
+		<div class="order_total">
+			<div class="tr">
+				<div class="th">总金额</div>
+				<div class="td"><input style="border:0px" type="text" name="price" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¥&nbsp;{$sum}.00"></div>
+			</div>
+		
+	
+			<div class="tr">
+				<div class="th">运费</div>
+				<div class="td">&nbsp;¥&nbsp;0.00</div>
+			</div>
+			<div class="line"></div>
+			<div class="tr">
+				<div class="th">应付：</div>
+				<div class="td total_price">¥&nbsp;<span id="totalPrice">{$sum}</span></div>
+			</div>
+             <input type="hidden"  name="sum" value="{$sum}"  >
+		         <input type="hidden"  name="wang" value="zong"  >
+			<div class="tr">
+				<div class="order_btn primary" id="submitFrom"><input type="submit" style="background:#00C3F5;border:0px;font-size:25px;color:#fff;" value="提交订单"></div>
+			</div>
+		</div>
+</div>
+</div>
+</form>
+</div>
+<!-- common js -->
+
+<script charset="utf-8" src="__PUBLIC__/home/Acount/js/v.js"></script>
+<script src="__PUBLIC__/home/Acount/js/hm.js"></script>
+<script src="__PUBLIC__/home/Acount/js/flow.js"></script>
+<script src="__PUBLIC__/home/Acount/js/analytics-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/home/Acount/js/site-lib.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/Acount/js/site-base.js"></script>
+<script>var $=require("common:lib/jquery/jquery-1.11.3");require("common:lib/jquery/jquery-migrate-1.2.1"),window.$=$,window.jQuery=$,window.jquery=$,$(function(){require("common:widgets/site-topbar/topbar"),require("common:widgets/site-header/header")});</script>
+<script type="text/javascript" src="__PUBLIC__/home/Acount/img/common.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/home/Acount/js/citys.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/Acount/js/order_add_new.js"></script>
+
+
+
+
+<!-- common footer -->
+
+<!--四级联动-->
+        <script>
+          $(function(){
+            function getCity(obj,value)
+            {
+              $.get('{:U('Acount/demo4')}',{'upid':value},function(msg){
+                // 1.msg是对象，将对象遍历拼接成option格式的HTML标签
+                var str = '<option>--请选择--</option>';
+                for (var i in msg) {
+                  str += '<option value="'+msg[i]['id']+'">'+msg[i]['name']+'</option>';
+                }
+                // 2.将拼接好的HTML代码放在select内
+                if (obj == 'province') {
+                  $('#province').html(str);
+                } else {
+                  obj.next().html(str);
+                }
+              })
+            }
+            getCity('province',0);
+
+            // 省份改变事件，市改变
+            $('#province,#city,#county').change(function(){
+              // 0.初始化
+              $(this).nextAll().html('<option>--请选择--</option>');
+              //在下面的ajax请求中，$(this)传递不进去，只能定义变量接收$(this),在下面的ajax中使用变量
+              var that = $(this);
+              // 1.获取值
+              var value = $(this).val();
+
+              getCity(that,value);
+            })
+          })
+
+        </script>
+      <script type="text/javascript">
+      
+
+
+      </script>
+        <script>
+        $('#queren').click(function(){
+          var sheng = $('#province').val();
+          var shi = $('#city').val();
+          var xian = $('#county').val();
+          var xiang = $('#xiang').val();
+          var adr = $('.adr').attr('value');
+          $.post('{:U('Acount/demo6')}',{sheng:sheng,shi:shi,xian:xian,xiang:xiang,adr:adr},function(msg){
+            if(msg == 'ok'){
+              location.href="{:U('Acount/index')}";
+            }
+          })
+        })
+      
+      </script>
+          <script type="text/javascript">
+     $(function(){
+      $('#did').mousedown(function(){
+       //alert('111');
+       $('#did').css('color','#0CBBEF');
+        $('#new').toggle(500);
+          $('#old').css('display','none');
+      })
+      $('#did').mouseup(function(){
+       //alert('111');
+       $('#did').css('color','#000');
+        
+
+      })
+    $('#id').mousedown(function(){
+       //alert('111');
+       $('#id').css('color','#0CBBEF');
+        $('#old').toggle(500);
+    $('#new').css('display','none');
+      })
+      $('#id').mouseup(function(){
+       //alert('111');
+       $('#id').css('color','#000');
+      
+
+      })
+
+
+     })
+  
+  
+    </script>
+      <script>
+        $('.xg').click(function(){
+          $('.dizhi').toggle(500);
+        })
+      
+      </script>
+
+<br>
+<include file="Common/footer"/>
+</body></html>

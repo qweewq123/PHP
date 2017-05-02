@@ -1,0 +1,1093 @@
+/*!
+ * main.css 
+ * use for list
+ * @date 2016.01.06
+ * @author chenjinghui@meizu.com
+ * @version 0.0.1
+ */
+/* Positioning */
+.posr {
+  position: relative;
+}
+
+.posa {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed !important;
+  top: 0;
+  z-index: 1000;
+}
+
+.fl {
+  float: left;
+  _display: inline;
+}
+
+.fr {
+  float: right;
+  _display: inline;
+}
+
+/* Box-model */
+.hide {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inblock {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bfc {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.mt5 {
+  margin-top: 5px !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.mt30 {
+  margin-top: 30px !important;
+}
+
+.mr5 {
+  margin-right: 5px !important;
+}
+
+.mr10 {
+  margin-right: 10px !important;
+}
+
+.mr15 {
+  margin-right: 15px !important;
+}
+
+.mr20 {
+  margin-right: 20px !important;
+}
+
+.mr30 {
+  margin-right: 30px !important;
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.ml5 {
+  margin-left: 5px !important;
+}
+
+.ml10 {
+  margin-left: 10px !important;
+}
+
+.ml15 {
+  margin-left: 15px !important;
+}
+
+.ml20 {
+  margin-left: 20px !important;
+}
+
+.ml30 {
+  margin-left: 30px !important;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.p5 {
+  padding: 5px !important;
+}
+
+.p10 {
+  padding: 10px !important;
+}
+
+.p15 {
+  padding: 15px !important;
+}
+
+.p20 {
+  padding: 20px !important;
+}
+
+.p30 {
+  padding: 30px !important;
+}
+
+.pt5 {
+  padding-top: 5px !important;
+}
+
+.pt10 {
+  padding-top: 10px !important;
+}
+
+.pt15 {
+  padding-top: 15px !important;
+}
+
+.pt20 {
+  padding-top: 20px !important;
+}
+
+.pt30 {
+  padding-top: 30px !important;
+}
+
+.pl5 {
+  padding-left: 5px !important;
+}
+
+.pl10 {
+  padding-left: 10px !important;
+}
+
+.pl15 {
+  padding-left: 15px !important;
+}
+
+.pl20 {
+  padding-left: 20px !important;
+}
+
+.pl30 {
+  padding-left: 30px !important;
+}
+
+.pr5 {
+  padding-right: 5px !important;
+}
+
+.pr10 {
+  padding-right: 10px !important;
+}
+
+.pr15 {
+  padding-right: 15px !important;
+}
+
+.pr20 {
+  padding-right: 20px !important;
+}
+
+.pr30 {
+  padding-right: 30px !important;
+}
+
+.pb5 {
+  padding-bottom: 5px !important;
+}
+
+.pb10 {
+  padding-bottom: 10px !important;
+}
+
+.pb15 {
+  padding-bottom: 15px !important;
+}
+
+.pb20 {
+  padding-bottom: 20px !important;
+}
+
+.pb30 {
+  padding-bottom: 30px !important;
+}
+
+.rc3 {
+  border-radius: 3px;
+}
+
+.rc5 {
+  border-radius: 5px;
+}
+
+.rc10 {
+  border-radius: 10px;
+}
+
+/* Typography */
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.lineh1 {
+  line-height: 1;
+}
+
+.lineh12 {
+  line-height: 1.2;
+}
+
+.lineh2 {
+  line-height: 2;
+}
+
+.yahei {
+  font-family: "Hiragino Sans GB","Microsoft Yahei";
+}
+
+.songti {
+  font-family: "Hiragino Sans GB","\5b8b\4F53";
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.indent {
+  text-indent: 2em;
+}
+
+.br {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.vtop {
+  vertical-align: top;
+}
+
+.vmid {
+  vertical-align: middle;
+}
+
+.vbot {
+  vertical-align: bottom;
+}
+
+.tcenter {
+  text-align: center;
+}
+
+.tleft {
+  text-align: left;
+}
+
+.tright {
+  text-align: right;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.color3 {
+  color: #333;
+}
+
+.color6 {
+  color: #666;
+}
+
+.color9 {
+  color: #999;
+}
+
+.colorc {
+  color: #ccc;
+}
+
+.row {
+  *zoom: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .col {
+  float: left;
+  *display: inline;
+  min-height: 1px;
+}
+
+.col-main {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+}
+
+.col-sub {
+  float: left;
+  margin-left: -100%;
+  overflow: hidden;
+}
+
+/* filter */
+.togray {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  -webkit-filter: grayscale(1);
+  filter: url("data:image/svg+xml; utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+}
+
+/* html5 */
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+mark {
+  background: #FF0;
+  color: #000;
+}
+
+input[type="button"], input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+}
+
+/* animate */
+.trans {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.anim {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.anim.fast {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+.anim.slow {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.anim.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.anim.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/*!
+ * list-selector.css 
+ * use for list
+ * @date 2016.01.06
+ * @author chenjinghui@meizu.com
+ * @version 0.0.1
+ */
+.nav {
+  position: relative;
+  margin: 20px 0;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.nav ul {
+  margin-right: -20px;
+}
+
+.nav li {
+  float: left;
+  width: 177px;
+  margin-left: -1px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.nav li a {
+  display: block;
+  text-align: center;
+  line-height: 58px;
+}
+
+.nav li.current a {
+  background: #00c3f5;
+  color: #fff;
+}
+
+/*!
+ * list-selector.css 
+ * use for list
+ * @date 2016.01.06
+ * @author chenjinghui@meizu.com
+ * @version 0.0.1
+ */
+.goods-list {
+  position: relative;
+  z-index: 1;
+  *zoom: 1;
+  margin-bottom: 20px;
+  height: auto;
+  border: 1px solid #e5e5e5;
+  background: #FFF;
+}
+
+.goods-list .goods-list-wrap {
+  height: auto;
+  margin-bottom: -1px;
+}
+
+.gl-item {
+  width: 25%;
+  height: 406px;
+  float: left;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.gl-item .gl-item-wrap {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: #fff;
+  padding: 38px 0 10px;
+  -webkit-transition: border-color .1s ease;
+  -moz-transition: border-color .1s ease;
+  transition: border-color .1s ease;
+}
+
+.gl-item .mod-pic {
+  position: relative;
+  height: 220px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.gl-item .mod-pic .picon {
+  top: 0;
+  right: 0;
+}
+
+.gl-item .mod-pic a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.gl-item .mod-name {
+  padding: 0 30px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.gl-item .mod-name a:hover {
+  text-decoration: none;
+}
+
+.gl-item .mod-name em,
+.gl-item .mod-name i {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  -webkit-transition: height .08s ease;
+  -moz-transition: height .08s ease;
+  transition: height .08s ease;
+}
+
+.gl-item .mod-name i {
+  font-style: normal;
+  width: 185px;
+  color: #ffaa71;
+  line-height: 20px;
+}
+
+.gl-item .mod-price {
+  position: relative;
+  overflow: hidden;
+  padding: 0 30px;
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 20px;
+  color: #e02b41;
+}
+
+.gl-item .mod-price em {
+  font-size: 16px;
+}
+
+.gl-item .mod-price i {
+  font-style: normal;
+}
+
+.recommend {
+  margin-bottom: 60px;
+}
+
+.recommend-hd {
+  overflow: hidden;
+  margin-top: 60px;
+  margin-bottom: 14px;
+}
+
+.recommend-hd .mod-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: normal;
+  float: left;
+}
+
+.recommend-hd .mod-control {
+  float: right;
+}
+
+.recommend-hd .mod-control a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  cursor: pointer;
+}
+
+.recommend-hd .mod-control a.disabled {
+  opacity: .5;
+  filter: alpha(opacity=50);
+  cursor: default;
+}
+
+.recommend-hd .mod-control i {
+  font-family: Arial;
+  color: #bdbdbd;
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+}
+
+.recommend-hd .mod-control .vm-prev i {
+  background: url(http://store.res.meizu.com/resources/php/store/static/home/widgets/home-recommend/img/arrow-l.png) no-repeat 50% 50%;
+}
+
+.recommend-hd .mod-control .vm-prev.flex-disabled i {
+  background: url(http://store.res.meizu.com/resources/php/store/static/home/widgets/home-recommend/img/arrow-l-disabled.png) no-repeat 50% 50%;
+}
+
+.recommend-hd .mod-control .vm-next i {
+  background: url(http://store.res.meizu.com/resources/php/store/static/home/widgets/home-recommend/img/arrow-r.png) no-repeat 50% 50%;
+}
+
+.recommend-hd .mod-control .vm-next.flex-disabled i {
+  background: url(http://store.res.meizu.com/resources/php/store/static/home/widgets/home-recommend/img/arrow-r-disabled.png) no-repeat 50% 50%;
+}
+
+.recommend-slider {
+  overflow: hidden;
+  margin-right: -10px;
+  border: 1px solid #e5e5e5;
+}
+
+.recommend-slider-wrap {
+  margin-right: -100px;
+}
+
+.rs-item {
+  float: left;
+  height: 338px;
+  width: 245.6px;
+  margin-right: 5px;
+  transition: all .2s ease;
+}
+
+.rs-item-wrap {
+  padding: 36px 10px 5px;
+  text-align: center;
+}
+
+.rs-item-wrap img {
+  transition: all .2s ease;
+}
+
+.rs-item-wrap:hover img {
+  transform-origin: 50% 50%;
+  transform: scale(1.1111);
+}
+
+.rs-item-wrap .mod-desc {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.rs-item-wrap .mod-desc .vm-title {
+  font-size: 14px;
+  color: #555757;
+}
+
+.rs-item-wrap .mod-desc .vm-subtitle {
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.rs-item-wrap .mod-desc .vm-oldprice,
+.rs-item-wrap .mod-desc .vm-price {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #e02b41;
+}
+
+.rs-item-wrap .mod-desc .vm-price span {
+  font-size: 16px;
+}
+
+.rs-item-wrap .mod-desc .vm-oldprice {
+  color: #b2b2b2;
+  text-decoration: line-through;
+  padding-right: 2px;
+}
+
+/*
+ * jQuery FlexSlider v2.6.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url("fonts/flexslider-icon.eot");
+  src: url("fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("fonts/flexslider-icon.woff") format("woff"), url("fonts/flexslider-icon.ttf") format("truetype"), url("fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+* html .flexslider .slides {
+  height: 1%;
+}
+
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0 0 60px;
+  background: #ffffff;
+  border: 4px solid #ffffff;
+  position: relative;
+  zoom: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+.carousel li {
+  margin-right: 5px;
+}
+
+.flex-direction-nav {
+  *height: 0;
+}
+
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+body {
+  line-height: 1.5;
+  color: #666;
+}
+
+a {
+  color: #666;
+}
+
+.wrapper {
+  padding-top: 1px;
+}
+
+.container {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}

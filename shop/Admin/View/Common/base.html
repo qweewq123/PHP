@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <block name="head">
+    <title>后台管理系统--后台首页</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    </block>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="__PUBLIC__/home/img/favicon.ico" type="image/x-icon" />
+    <!-- Stylesheets -->
+    <link href="__PUBLIC__/admin/resouce/style/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/admin/resouce/style/font-awesome.css">
+    <link href="__PUBLIC__/admin/resouce/style/style.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/resouce/style/datepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/resouce/style/ui-dialog.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/resouce/uniform/css/uniform.default.css" rel="stylesheet">
+
+    <!-- HTML5 支持 IE -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/admin/resouce/js/html5shim.js"></script>
+    <![endif]-->
+    <block name="csslink"> </block>
+</head>
+<body>
+    <include file="Common/header"/>
+    <div class="content">
+        <include file="Common/menu"/>
+        <block name="main">
+            内容区域
+        </block>
+    </div>
+    <include file="Common/footer"/>
+</body>
+</html>
+<!-- JS -->
+<script src="__PUBLIC__/admin/resouce/js/jquery.js"></script> <!-- jQuery -->
+<script src="__PUBLIC__/admin/resouce/js/jquery-migrate-1.2.0.js"></script> <!-- jQuery向下兼容扩展插件 -->
+<script src="__PUBLIC__/admin/resouce/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="__PUBLIC__/admin/resouce/js/custom.js"></script> <!-- Custom codes -->
+<script src="__PUBLIC__/admin/resouce/js/bootstrap-datepicker.js"></script> <!-- 时间控件 -->
+<script src="__PUBLIC__/admin/resouce/js/jquery.validate.min.js"></script> <!-- JQuery验证 -->
+<script src="__PUBLIC__/admin/resouce/js/jquery.validate.messages_zh.js"></script> <!-- JQuery验证中文支持 -->
+<script src="__PUBLIC__/admin/resouce/js/dialog-min.js"></script> <!-- dialog插件 -->
+<script src="__PUBLIC__/admin/resouce/uniform/jquery.uniform.min.js"></script> <!-- 表单美化js -->
+<!--js文件引用继承块(预留)-->
+<block name="jslink"></block>
+<script>
+    $(function() {
+        $("input[type=checkbox],input[type=radio]").uniform();
+    });
+</script>

@@ -1,0 +1,163 @@
+
+<div class="site-topbar clearfix">
+  <div class="mzcontainer">
+    <div class="topbar-nav">
+     
+      <a href="__MODULE__/Index/index">SS商城</a>
+     
+      <a href="http://bbs.meizu.cn/" target="_blank">社区</a>
+    </div>
+    <div class="topbar-right">
+      <ul class="topbar-info">
+        <li class="topbar-info-msg" id="MzTopbarMsg">
+          <a class="topbar-link" href="http://store.meizu.com/member/message/index" target="_blank">消息</a>
+          <span class="msg-tag" id="MzMsgTag"></span>
+        </li>
+        <li class="topbar-order-msg"  style="margin-top:8px;">
+          <a style="color:black;font-size:10px" href="__MODULE__/Collection/index">我的收藏</a>
+          <span class="msg-tag" id="MzOrderMsgTag"></span>
+        </li>
+        <li class="topbar-order-msg"  style="margin-top:8px;">
+          <a style="color:black;font-size:10px" href="__MODULE__/Center/index">我的订单</a>
+          <span class="msg-tag" id="MzOrderMsgTag"></span>
+        </li>
+        <if condition="$_SESSION['login'] eq 2">
+        <li class="mz_login" style="margin-top:8px;">
+          <a style="color:black;font-size:10px" href="#">欢迎&nbsp;{$_SESSION['username']}</a>
+        </li>
+         <li class="mz_login" style="margin-top:8px;">
+          <a style="color:black;font-size:10px" href="__MODULE__/Login/goout">退出</a>
+        </li>
+        <else/>
+        <li class="mz_login" style="margin-top:8px;">
+          <a style="color:black;font-size:10px" href="__MODULE__/Login">登陆</a>
+        </li>
+
+        </if>
+        <li class="mz_login" style="margin-top:8px;">
+          <a style="color:black;font-size:10px" href="__MODULE__/Login">注册</a>
+        </li>
+        <li class="topbar-info-member" style="display:none;">
+          <a class="topbar-link" href="http://store.meizu.com/member/index" target="_blank">
+            <span id="MzUserName" class="site-member-name">MEIZU</span>的商城
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+      
+<div class="site-header">
+  <div class="mzcontainer">
+    <div class="header-logo">
+      <a href="__MODULE__/Index/index">
+      <img src="__PUBLIC__/home/index/img/logo-header.png" srcset="http://store.res.meizu.com/resources/php/store/images/logo-header@2x.png 2x" width="115" height="20" alt="魅族科技（中国）有限公司">
+      </a>
+    </div>
+    <div class="header-nav">
+      <ul class="nav-list">
+
+             <foreach name="toubu" item="vo21">
+               {$vo21}
+             </foreach>
+             </ul>
+    </div>
+
+    <div class="header-cart" >
+      <a href="__MODULE__/Cart/index">
+        <div class="header-cart-wrap">
+          <span class="header-cart-icon"></span>
+            购物车
+          <span id="MzHeaderCartNum" class="header-cart-num" data-extcls="existence">0</span>
+          <div class="header-cart-spacer"></div>
+        </div>
+      </a>
+      <div class="header-cart-detail"><div class="header-cart-empty" data-load="正在加载购物车信息 ..." data-empty="购物车还没有商品，快购买吧！">购物车还没有商品，快购买吧！</div>
+</div>
+    </div>
+  </div>
+  <div id="MzNavMenu" class="header-nav-menu" style="display: none;background:#ddd;width:800px;position:relation;left:370px;opacity:0.7;color:cyan" >
+    <div class="mzcontainer"><ul class="menu-product-list">
+                                    <li class="menu-product-item">
+                    <a href="http://store.meizu.com/product/huntkey.html?rc=sd" target="_blank">
+                      <div class="menu-product-figure">
+                        <img src="__PUBLIC__/home/index/img/1458122860@126x126.png" data-src="__PUBLIC__/home/index/img/1458122860@126x126.png" width="100" height="150">
+                      </div>
+                      <p class="menu-product-name">小智插线板</p>
+                      <p class="menu-product-price">
+                        <span class="originPrice"></span>
+                        ¥
+                        <span>79</span>
+                                              </p>
+                    </a>
+                  </li>
+                                    <li class="menu-product-item">
+                    <a href="http://store.meizu.com/item/meizu_luyouqi.html?rc=sd" target="_blank">
+                      <div class="menu-product-figure">
+                        <img src="__PUBLIC__/home/index/img/1450937728@126x126.png" data-src="__PUBLIC__/home/index/img/1450937728@126x126.png" width="100" height="150">
+                      </div>
+                      <p class="menu-product-name">魅族智能路由器</p>
+                      <p class="menu-product-price">
+                        <span class="originPrice"></span>
+                        ¥
+                        <span>99</span>
+                                              </p>
+                    </a>
+                  </li>
+                                    <li class="menu-product-item">
+                    <a href="http://store.meizu.com/product/ryfit_young.html" target="_blank">
+                      <div class="menu-product-figure">
+                        <img src="__PUBLIC__/home/index/img/1458526079@126x126.png" data-src="__PUBLIC__/home/index/img/1458526079@126x126.png" width="100" height="150">
+                      </div>
+                      <p class="menu-product-name">RyFit 智能体质分析仪 青春版</p>
+                      <p class="menu-product-price">
+                        <span class="originPrice"></span>
+                        ¥
+                        <span>99</span>
+                                              </p>
+                    </a>
+                  </li>
+                                    <li class="menu-product-item">
+                    <a href="http://store.meizu.com/product/lefan_yundong.html" target="_blank">
+                      <div class="menu-product-figure">
+                        <img src="__PUBLIC__/home/index/img/1451011733@126x126.png" data-src="__PUBLIC__/home/index/img/1451011733@126x126.png" width="100" height="150">
+                      </div>
+                      <p class="menu-product-name">乐范魔力贴 运动版</p>
+                      <p class="menu-product-price">
+                        <span class="originPrice">¥119</span>
+                        ¥
+                        <span>109</span>
+                                              </p>
+                    </a>
+                  </li>
+                                    <li class="menu-product-item">
+                    <a href="http://store.meizu.com/product/mi_xingche_gps.html" target="_blank">
+                      <div class="menu-product-figure">
+                        <img src="__PUBLIC__/home/index/img/1451456316@126x126.png" data-src="__PUBLIC__/home/index/img/1451456316@126x126.png" width="100" height="150">
+                      </div>
+                      <p class="menu-product-name">米家行车记录仪</p>
+                      <p class="menu-product-price">
+                        <span class="originPrice"></span>
+                        ¥
+                        <span>559</span>
+                                              </p>
+                    </a>
+                  </li>
+                                    <li class="menu-product-item">
+                    <a href="http://store.meizu.com/product/abading_KT04.html?rc=sd" target="_blank">
+                      <div class="menu-product-figure">
+                        <img src="__PUBLIC__/home/index/img/1455861326@126x126.png" data-src="__PUBLIC__/home/index/img/1455861326@126x126.png" width="100" height="150">
+                      </div>
+                      <p class="menu-product-name">阿巴町智能通话手表 小A</p>
+                      <p class="menu-product-price">
+                        <span class="originPrice"></span>
+                        ¥
+                        <span>898</span>
+                                              </p>
+                    </a>
+                  </li>
+                                    <!-- more -->
+                                  </ul></div>
+  </div>
+</div>

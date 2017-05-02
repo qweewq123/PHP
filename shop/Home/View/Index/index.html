@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://store.meizu.com/ -->
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>SS商城-提供魅族 PRO 5、魅族MX系列、魅蓝note系列、魅蓝metal系列产品的预约和购买</title>
+      <meta name="viewport" content="width=1240, initial-scale=1">
+
+      <link href="http://store.res.meizu.com/resources/php/store/favicon.ico" rel="shortcut icon" type="image/x-icon">
+      <link href="http://store.res.meizu.com/resources/php/store/favicon.ico" rel="icon" type="image/x-icon">
+
+      <meta name="description" content="SS商城是魅族面向全国服务的官方电子商务平台,提供魅族 PRO 5、魅族MX系列、魅蓝note系列和魅蓝metal系列等产品的预约和购买.官方正品，全国联保。">
+      <meta name="Keywords" content="魅族官方在线商店、魅族在线商城、魅族官网在线商店、SS商城">
+      <meta property="qc:admins" content="4150776417256551256375">
+      
+    <link rel="stylesheet" href="__PUBLIC__/home/index/css/site-base.css">
+
+
+    
+    <link rel="stylesheet" href="__PUBLIC__/home/index/css/pkg-home.css">
+</head>
+    <body>
+<include file="common/header"/>
+ 
+
+    
+<div class="home-category-wrap" style="clear:both">
+  <div class="mzcontainer home-category-position">
+    <div class="home-category-list">
+      <ul class="home-category-nav">
+          <li class="home-category-nav-item ">
+            <a class="category-nav-link" href="__MODULE__/Commodity/index">
+              <span>全部商品分类</span>
+            </a>
+                      </li>
+                  <foreach name="arr" item="vo">
+                         {$vo}       
+                    </foreach>        
+              </ul>
+    </div>
+  </div>
+</div>
+      
+<div id="MzHomeSlider" class="home-slider">
+  <div class="home-slider-items">
+        <foreach name="data" item="vo" >
+
+      <div class="bx-wrapper" style="max-width: 100%;">
+
+      <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 480px;">
+        <ul class="bxslider" style="width: auto; position: relative;">
+        
+        
+          <li data-bgcolor="#b4c843" style="float: none; list-style: none; position: absolute; width: 1349px; z-index: 0; display: none; ">
+            <div class="mzcontainer">
+            <a href="__MODULE__/Commodity/index" >
+              <img src="__PUBLIC__/Uploads/{$vo.img1}" width="1240" height="480">
+            </a>
+            </div>
+          </li>
+          <li data-bgcolor="#b4c843" style="float: none; list-style: none; position: absolute; width: 1349px; z-index: 0; display: none; ">
+            <div class="mzcontainer">
+            <a href="__MODULE__/Commodity/index" >
+              <img src="__PUBLIC__/Uploads/{$vo.img2}" width="1240" height="480">
+            </a>
+            </div>
+          </li>
+          <li data-bgcolor="#b4c843" style="float: none; list-style: none; position: absolute; width: 1349px; z-index: 0; display: none; ">
+            <div class="mzcontainer">
+            <a href="__MODULE__/Commodity/index" >
+              <img src="__PUBLIC__/Uploads/{$vo.img3}" width="1240" height="480">
+            </a>
+            </div>
+          </li>
+          <li data-bgcolor="#b4c843" style="float: none; list-style: none; position: absolute; width: 1349px; z-index: 0; display: none; ">
+            <div class="mzcontainer">
+            <a href="__MODULE__/Commodity/index" >
+              <img src="__PUBLIC__/Uploads/{$vo.img4}" width="1240" height="480">
+            </a>
+            </div>
+          </li>
+          <li data-bgcolor="#b4c843" style="float: none; list-style: none; position: absolute; width: 1349px; z-index: 0; display: none; ">
+            <div class="mzcontainer">
+            <a href="__MODULE__/Commodity/index" >
+              <img src="__PUBLIC__/Uploads/{$vo.img5}" width="1240" height="480">
+            </a>
+            </div>
+          </li>
+        
+
+              </ul>
+            </div>
+            
+        </div>
+            </foreach>
+
+  </div>
+</div>
+      <div class="mzcontainer" style="margin-bottom:80px;">
+        
+
+
+        
+<div class="home-panel home-rmd">
+  <div class="home-panel-topbar">
+    <h2 class="home-panel-title">热品推荐</h2>
+          <div class="home-panel-tools">
+        <span id="MzRmdSliderLeft" class="panel-slider panel-slider-left">
+          <span class="more-arrow"> <</span>
+        </span>
+        <span id="MzRmdSliderRight" class="panel-slider panel-slider-right panel-slider-disabled">
+          <span class="more-arrow">></span>
+        </span>
+      </div>
+      </div>
+  <div class="home-rmd-main">
+    <div class="home-rmd-cotent">
+      <div class="rm-box-25">
+        <div id="MzRmdList" class="rmd-content-list" style="width: 3735px; left: -2490px;">
+        <foreach name="pros" item="oo">
+                                    <div class="rmd-box rmd-box-product">
+                <a href="__MODULE__/Details/index/id/{$oo.id}">
+                  <div class="rmd-product-detail">
+                      <img src="__PUBLIC__/Uploads/{$oo.image1}" alt="$oo.proname}" width="180" height="180">
+                      <div class="rmd-product-desc">
+                        <h4 class="rmd-product-title">{$oo.proname}</h4>
+                       
+                                                  
+                                                <p class="rmd-product-price">
+                          ¥
+                          <span>{$oo.price}</span>
+                                                  </p>
+                      </div>
+                  </div>
+                                      <div class="box-product-sign" style="background-color: #00afbe;">
+                      新品                    </div>
+                                  </a>
+              </div>
+      </foreach>
+                    
+                              </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      <div class="home-floor-ad">
+        <img src="__PUBLIC__/home/index/img/1458815029-31254.jpg">
+                    <a href="javascript:void(0)"></a>
+                    <a href="javascript:void(0)"></a>
+            </div>
+    <div class="home-panel home-rmd">
+    <div class="home-panel-topbar">
+      <h2 class="home-panel-title">手机</h2>
+      <h6 class="home-panel-subtitle">
+              </h6>     
+            <div class="home-panel-tools home-floor-tools">
+       
+      </div>
+          </div>
+    <div class="home-rmd-main">
+      <div class="home-rmd-cotent">
+                              <div class="rmd-box rmd-box-ad rmd-box-ad-11">
+              <a href="javascript:void(0)">
+                <img class="home-img-lazy" data-original="__PUBLIC__/home/index/img/1458873006-58659.jpg" src="__PUBLIC__/home/index/img/1458873006-58659.jpg" alt="魅蓝note2" style="display: inline;">
+              </a>
+            </div>
+                            
+            
+            
+                  <foreach name="proshow"  item="bb">
+            
+                        <div class="rmd-box rmd-box-product">
+              <a href="__MODULE__/Details/index/id/{$bb.id}">
+                <div class="rmd-product-detail">
+                  <img class="home-img-lazy"  src="__PUBLIC__/Uploads/{$bb.image1}" width="180" height="180" style="display: inline;">
+                  <div class="rmd-product-desc">
+                    <h4 class="rmd-product-title">{$bb.proname}</h4>
+                  
+                                        <p class="rmd-product-price">
+                      ¥
+                      <span>{$bb.price}</span>
+                                          </p>
+                  </div>
+                </div>
+                                  <div class="box-product-sign" style="background-color: #00afbe;">
+                    商品                  </div>
+                              </a>
+            </div>
+                                        
+            </foreach>
+            
+            
+            
+                       
+            </div>
+                                    </div>
+    </div>
+
+      <div class="home-floor-ad">
+        <img src="__PUBLIC__/home/index/img/1457670561-25113.jpg">
+                     <a href="javascript:void(0)"></a>
+            </div>
+    <div class="home-panel home-rmd">
+    <div class="home-panel-topbar">
+      <h2 class="home-panel-title">耳机\音响</h2>
+      
+            <div class="home-panel-tools home-floor-tools">
+        
+      </div>
+          </div>
+    <div class="home-rmd-main">
+      <div class="home-rmd-cotent">
+
+                              <div class="rmd-box rmd-box-ad rmd-box-ad-1">
+              <a href="javascript:void(0)">
+                <img class="home-img-lazy" data-original="__PUBLIC__/home/index/img/1458549532-59541.jpg" src="__PUBLIC__/home/index/img/1458549532-59541.jpg" alt="魅族HD50" style="display: inline;">
+              </a>
+            </div>
+                            
+                       
+            
+                  <foreach name="proer"  item="cc">
+            
+                        <div class="rmd-box rmd-box-product">
+              <a href="__MODULE__/Details/index/id/{$cc.id}">
+                <div class="rmd-product-detail">
+                  <img class="home-img-lazy"  src="__PUBLIC__/Uploads/{$cc.image1}" width="180" height="180" style="display: inline;">
+                  <div class="rmd-product-desc">
+                    <h4 class="rmd-product-title">{$cc.proname}</h4>
+                  
+                                        <p class="rmd-product-price">
+                      ¥
+                      <span>{$cc.price}</span>
+                                          </p>
+                  </div>
+                </div>
+                                  <div class="box-product-sign" style="background-color: #00afbe;">
+                    商品                  </div>
+                              </a>
+            </div>
+                                        
+            </foreach>
+            
+            
+            
+     
+                                        
+            
+            
+            
+                                    </div>
+    </div>
+  </div>
+      <div class="home-floor-ad">
+        <img src="__PUBLIC__/home/index/img/1458868668-89168.png">
+                    <a href="javascript:void(0)"></a>
+            </div>
+   
+    <div class="home-panel home-rmd">
+    <div class="home-panel-topbar">
+      <h2 class="home-panel-title">手机周边</h2>
+     
+            <div class="home-panel-tools home-floor-tools">
+      
+      </div>
+          </div>
+    <div class="home-rmd-main">
+      <div class="home-rmd-cotent">
+                              <div class="rmd-box rmd-box-ad rmd-box-ad-2">
+              <a href="javascript:void(0)">
+                <img class="home-img-lazy" data-original="__PUBLIC__/home/index/img/1453111536-56163.jpg" src="__PUBLIC__/home/index/img/1453111536-56163.jpg" alt="魅蓝metal 高透保护膜" style="display: inline;">
+              </a>
+            </div>
+                            
+            
+            
+            
+              <foreach name="probao"  item="dd">
+            
+                        <div class="rmd-box rmd-box-product">
+              <a href="__MODULE__/Details/index/id/{$dd.id}">
+                <div class="rmd-product-detail">
+                  <img class="home-img-lazy"  src="__PUBLIC__/Uploads/{$dd.image1}" width="180" height="180" style="display: inline;">
+                  <div class="rmd-product-desc">
+                    <h4 class="rmd-product-title">{$dd.proname}</h4>
+                  
+                                        <p class="rmd-product-price">
+                      ¥
+                      <span>{$dd.price}</span>
+                                          </p>
+                  </div>
+                </div>
+                                  <div class="box-product-sign" style="background-color: #00afbe;">
+                    商品                  </div>
+                              </a>
+            </div>
+                                        
+            </foreach>
+                                    </div>
+    </div>
+  </div>
+     
+
+      
+<div class="site-gotop" style="display: none;">
+  
+  <div class="gotop-arrow" title="回到顶部"></div>
+</div>
+<include file="common/footer"/>
+      
+
+      
+<script charset="utf-8" src="__PUBLIC__/home/index/js/v.js"></script>
+<script src="__PUBLIC__/home/index/js/hm.js"></script>
+<script src="__PUBLIC__/home/index/js/flow.js"></script>
+<script src="__PUBLIC__/home/index/js/analytics-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/home/index/js/site-lib.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/index/js/site-base.js"></script>
+<script>var $=require("common:lib/jquery/jquery-1.11.3");require("common:lib/jquery/jquery-migrate-1.2.1"),window.$=$,window.jQuery=$,window.jquery=$,$(function(){require("common:widgets/site-topbar/topbar"),require("common:widgets/site-header/header")});</script>
+      <script type="text/javascript" src="__PUBLIC__/home/index/js/pkg-home.js"></script>
+<script charset="utf-8">var $=require("common:lib/jquery/jquery-1.11.3");$(function(){require("home:widgets/settlement-ad/settlement-ad"),require("home:widgets/home-slider/home-slider"),require("home:widgets/home-recommend/home-recommend"),require("home:widgets/home-category/home-category"),require("home:widgets/home-gotop/home-gotop"),require("home:js/jquery.lazyload/jquery.lazyload"),$("img.home-img-lazy").lazyload({});var e=document.createElement("img");e.src="http://log2.air.yoyi.com.cn/air/t?s=2503"});</script>
+
+<script>
+  var __mzt = __mzt || [];
+  (function() {
+	var hm = document.createElement("script");
+	hm.src = "http://sccom.res.meizu.com/js/analytics-min.js";
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<script type="text/javascript" charset="utf-8">
+	var _hmt = _hmt || [];
+	(function() {
+	var hm = document.createElement("script");
+	hm.src = ('https:' == document.location.protocol ? 'https://tongji-res.meizu.com' : 'http://tongji-res1.meizu.com') + '/resources/tongji/flow.js';
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?2a0c04774115b182994cfcacf4c122e9";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+ </script>
+  
+
+</body></html>

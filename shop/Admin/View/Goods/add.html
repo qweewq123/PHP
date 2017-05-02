@@ -1,0 +1,187 @@
+<extend name="Common/base" />
+<block name="main">
+<div class="mainbar">
+    <div class="page-head">
+        <div class="bread-crumb pull-left">
+             <a href="__MODULE__/Index/dashboard"><i class="icon-home"></i> 首页</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12">
+        <div class="container-fluid">
+            <div class="widget wred">
+                <div class="widget-head">
+                    <div class="pull-left">用户信息新增</div>
+                        <div class="widget-icons pull-right">
+                            <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <div class="padd">
+                        <div class="form profile">
+       <script type="text/javascript" charset="utf-8" src="__PUBLIC__/admin/xxoo/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/admin/xxoo/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/admin/xxoo/lang/zh-cn/zh-cn.js"></script>
+    
+<form  action="{:U('goods/insert')}"  method="post" enctype="multipart/form-data">
+
+        <table  width="100%">
+            
+           
+            <tr>
+                <td>商品名</td>
+                <td><input class='txt' type="text" name='proname' value=''></td>
+            </tr>
+            <tr>
+                <td>商品分类</td>
+                <td>
+                    {$catsSelect}
+                </td>
+            </tr>
+            <tr>
+                <td>商品价格</td>
+                <td><input  class='txt' type="text" name='price' value=''></td>
+            </tr>
+
+                <tr>
+                <td>商品颜色</td>
+                <td><select name="color" id="">
+                
+                    <option value="1" selected>白色</option>
+                    <option value="2">蓝色</option>
+                    <option value="3">金色</option>
+                </select></td>
+            </tr>
+                            <tr>
+                <td>商品颜色</td>
+                <td><select name="color1" id="">
+                
+                    <option value="1" >白色</option>
+                    <option value="2" selected>蓝色</option>
+                    <option value="3">金色</option>
+                </select></td>
+            </tr>
+                            <tr>
+                <td>商品颜色</td>
+                <td><select name="color2" id="">
+                
+                    <option value="1" >白色</option>
+                    <option value="2">蓝色</option>
+                    <option value="3" selected>金色</option>
+                </select></td>
+            </tr>
+              <tr>
+                <td>商品库存</td>
+                <td><input class='txt' type="text" name='store' value=''></td>
+            </tr>
+            <tr>
+                <td>商品版本</td>
+                <td><select name="version" id="">
+                
+                    <option value="1" selected>网通版</option>
+                    <option value="2">电信版</option>
+                    <option value="3">公开版</option>
+                </select></td>
+            </tr>
+              <tr>
+                <td>商品版本</td>
+                <td><select name="version1" id="">
+                
+                    <option value="1" >网通版</option>
+                    <option value="2" selected>电信版</option>
+                    <option value="3">公开版</option>
+                </select></td>
+            </tr>
+                        <tr>
+                <td>商品版本</td>
+                <td><select name="version2" id="">
+                
+                    <option value="1" >网通版</option>
+                    <option value="2">电信版</option>
+                    <option value="3" selected>公开版</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>商品内存</td>
+                <td><select name="rom" id="">
+                
+                    <option value="1" selected>16GB</option>
+                    <option value="2">32GB</option>
+                   
+                </select></td>
+            </tr> 
+               <tr>
+                <td>商品内存</td>
+                <td><select name="rom1" id="">
+                
+                    <option value="1" >16GB</option>
+                    <option value="2" selected>32GB</option>
+                   
+                </select></td>
+            </tr>          
+            <tr>
+                <td>商品描述</td>
+                  <!--这里就是我们放编辑器的地方-->    
+                   <td><textarea name="des" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+          
+            <tr>
+                <td>商品状态</td>
+                <td><select name="state" id="">
+                
+                    <option value="1" selected>新品</option>
+                    <option value="2">热销</option>
+                    <option value="3">促销</option>
+                </select></td>
+
+            </tr>
+               <tr>
+                <td>商品图片</td>
+                <td><input type="file" name='image1' value=''></td>
+            </tr>
+                 <tr>
+                <td>商品图片</td>
+                <td><input type="file" name='image2' value=''></td>
+            </tr>
+            
+               <tr>
+                <td>商品图片</td>
+                <td><input type="file" name='image3' value=''></td>
+            </tr>
+            <div style="float:right">
+                <tr>
+                <td>商品详情</td>
+                  <!--这里就是我们放编辑器的地方-->    
+                    <script name="xq" id="editor" type="text/plain" style="width:500px;height:200px;"></script>
+            </tr>
+            </div>
+            <tr>
+                <td></td>
+                <td align=center><input type="submit" value="提交"></td>
+            </tr>
+
+        </table>
+    </form>    
+     <script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+
+
+</script>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll to top --> <span class="totop"><a href="#"><i
+        class="icon-chevron-up"></i></a></span> </block>
+

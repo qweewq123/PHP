@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://store.meizu.com/topic/list.html?active=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>SS商城-提供魅族 PRO 5、魅族MX系列、魅蓝note系列、魅蓝metal系列产品的预约和购买</title>
+    <meta name="description" content="SS商城是魅族面向全国服务的官方电子商务平台,提供魅族 PRO 5、魅族MX系列、魅蓝note系列和魅蓝metal系列等产品的预约和购买.官方正品，全国联保。">
+    <meta name="Keywords" content="魅族官方在线商店、魅族在线商城、魅族官网在线商店、SS商城">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://store.res.meizu.com/resources/php/store/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://store.res.meizu.com/resources/php/store/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="__PUBLIC__/home/Commodity/css/site-base.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/Commodity/css/main.css">
+    <script charset="utf-8" src="__PUBLIC__/home/Commodity/js/jquery-1.7.2.js"></script>
+    <style>
+      .wrapper{width: 1240px;margin: 0 auto;}
+      .crumbs {margin: 10px 0 24px;width: 100%;}
+      .crumbs .active {color: #00c3f5;}
+      .nav{border:1px solid #efefef;}
+      .nav li{border-left:1px solid #efefef;}
+      .goods-list{border:1px solid #efefef;}
+      .gl-item{border-bottom:1px solid #efefef;height:380px;}
+      .vm-price,.gl-item .mod-price em{display: inline-block;font-size: 12px;}
+      .vm-price span,.mod-price i{font-size: 16px;}
+      .vm-price-oldprice{display: inline-block;font-size: 12px;color: #b2b2b2;text-decoration: line-through;padding-right: 2px;}
+      .recommend-slider{border: 1px solid #efefef;margin-right: 0px;}
+      .recommend-hd .mod-control a{border: 1px solid #efefef;}
+    </style>
+<style type="text/css">.site-gotop{position:fixed;width:44px;bottom:50px;left:50%;margin-left:640px;display:none}.gotop-suggest,.gotop-arrow{display:inline-block;width:44px;height:44px;background:#b4b4b4 no-repeat 50%50%;cursor:pointer}.gotop-suggest{background-image:url(http://store.res.meizu.com/resources/php/store/static/detail/assets/img/suggest.png)}.gotop-arrow{background-image:url(http://store.res.meizu.com/resources/php/store/static/detail/assets/img/gotop-arrow.png);margin-top:5px}</style></head>
+
+<body>
+<include file="Common/header"/>
+<!-- 公共页头 End -->
+
+    <!-- 内容主体区域 Start -->
+    <div class="wrapper" id="main">
+        <div class="crumbs" >
+           <a href="__MODULE__/index/index" style="font-size:25px;color:#35C6F2"><b>首页</b></a>&nbsp;|&nbsp;
+            <a href="__CONTROLLER__/index" style="font-size:20px;color:#35C6F2"><b>全部商品</b></a>
+        </div>
+        <div class="container">
+
+            <!-- 导航栏 Start -->
+            <div class="nav clearfix" id="nav">
+                <ul class="clearfix">
+                  <foreach name="res" item="vo">
+                    <li class="current"><a href="__CONTROLLER__/index/id/{$vo.id}">{$vo.catename}</a></li>
+                  </foreach>
+                </ul>
+            </div>
+            <!-- 头部导航 End -->
+            <empty name="Think.get.id">
+             <div>排序&nbsp;|&nbsp;<a href="__CONTROLLER__/order/val/1"><span >价格从低到高</span></a>&nbsp;|&nbsp;<a href="__CONTROLLER__/order/val/2"><span>价格从高到低</span></a>&nbsp;|&nbsp;<a href="__CONTROLLER__/order/val/3"><span>按产品更新时间</span></a></div>
+             <else/>
+              <span></span>
+             </empty>
+   
+            <!-- 商品列表 Start -->
+            <div class="goods-list" id="goodsList">
+
+                <!-- 手机列表 Start -->
+                <div class="current" style="display: block;">
+                    <ul class="goods-list-wrap clearfix">
+
+                        <!-- 列表item Start -->
+                        <foreach name="res1" item="vo">
+                        <li class="gl-item">
+                            <dl class="gl-item-wrap">
+                                <dd class="mod-pic">
+                                    <a target="_self" href="__MODULE__/Details/index/id/{$vo.id}/cateid/{$vo.cateid}">
+                                        <img width="220" height="220" class="err-product" src="__PUBLIC__/Uploads/{$vo.image1}">
+                                    </a>
+                                </dd>
+                                <dd class="mod-name">
+                                    <a target="_blank" href="#">
+                                         {$vo.proname}
+                                    </a>
+                                </dd>
+                                <dd class="mod-price">
+                                    <p class="vm-price-oldprice">{$vo.price}</p>
+                                    <p class="vm-price">
+                                        ¥&nbsp;<span>{$vo.price}</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                        </foreach>
+                        <!-- 列表item End -->
+
+                    </ul>
+                </div>
+               
+
+            
+            <!-- 商品列表 End -->
+
+            <!-- 推荐 Start -->
+            
+            </div>
+            <!-- 推荐 End -->
+
+        </div>
+    </div>
+    <!-- 内容主体区域 End -->
+
+
+
+    <!-- 静态引入公共底部 Start -->
+   <include file="common/footer"/>
+    <!-- 静态引入公共底部 End -->
+
+
+<script charset="utf-8" src="__PUBLIC__/home/Commodity/js/v.js"></script>
+<script src="__PUBLIC__/home/Commodity/js/hm.js"></script>
+<script src="__PUBLIC__/home/Commodity/js/flow.js"></script>
+<script src="__PUBLIC__/home/Commodity/js/analytics-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/home/Commodity/js/site-lib.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/Commodity/js/site-base.js"></script>
+<script>var $=require("common:lib/jquery/jquery-1.11.3");require("common:lib/jquery/jquery-migrate-1.2.1"),window.$=$,window.jQuery=$,window.jquery=$,$(function(){require("common:widgets/site-topbar/topbar"),require("common:widgets/site-header/header")});</script>
+
+<script type="text/javascript" src="__PUBLIC__/home/Commodity/js/pkg-listcopy.js"></script>
+
+<!-- 统计代码 Start -->
+<script>
+  var __mzt = __mzt || [];
+  (function() {
+  var hm = document.createElement("script");
+  hm.src = "http://sccom.res.meizu.com/js/analytics-min.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var _hmt = _hmt || [];
+  (function() {
+  var hm = document.createElement("script");
+  hm.src = "//common.res.meizu.com/resources/tongji/flow.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?2a0c04774115b182994cfcacf4c122e9";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<!-- 统计代码 End -->
+
+
+
+<div class="site-gotop" id="siteGotop" style="opacity: 0; display: block;"><a class="gotop-suggest" title="建议反馈" href="http://store.meizu.com/member/suggest/index" target="_blank"></a><div class="gotop-arrow" title="回到顶部"></div></div></body></html>

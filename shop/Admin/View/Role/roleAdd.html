@@ -1,0 +1,69 @@
+<extend name="Common/base" />
+<block name="main">
+<div class="mainbar">
+    <div class="page-head">
+        <div class="bread-crumb pull-left">
+            <a href="__MODULE__/Index/dashboard"><i class="icon-home"></i> 首页</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12">
+        <div class="container-fluid">
+            <div class="widget wred">
+                <div class="widget-head">
+                    <div class="pull-left">角色信息新增</div>
+                        <div class="widget-icons pull-right">
+                            <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <div class="padd">
+                        <div class="form profile">
+
+                            <form class="form-horizontal" action="__CONTROLLER__/roleSave" id="saveUserFrom" method="post" onsubmit="">
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3 col-lg-offset-1" for="rid">角色RID</label>
+                                    <div class="col-lg-3">
+                                        <input type="text"  class="form-control"  maxlength="32" name="rid" id="rid" value=""/>
+                                    </div>
+                                    <b class="text-left" style="color:red">*</b>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3 col-lg-offset-1" for="password">角色</label>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control"  id="password"  name="rname"/>
+                                    </div>
+                                    <b class="text-left" style="color:red">*</b>
+                                </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-lg-3 col-lg-offset-1" for="rp">角色PID</label>
+                                    <div class="col-lg-3">
+                                        <input type="text"  class="form-control"  maxlength="32" name="rp" id="rp" value=""/>
+                                    </div>
+                                    <b class="text-left" style="color:red">*</b>
+                                </div>
+                             
+                                <div class="form-group">
+                                    <div class="col-lg-3 col-lg-offset-2">
+                                        <div class="btn-group" role="group" aria-label="...">
+                                         	
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="icon-save"></i>&nbsp;提交
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll to top --> <span class="totop"><a href="#"><i
+		class="icon-chevron-up"></i></a></span> </block>

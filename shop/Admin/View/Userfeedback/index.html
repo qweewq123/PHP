@@ -1,0 +1,96 @@
+<extend name="Common/base"/>
+<block name="main">
+<!--高级查询-->
+
+<div class="mainbar">
+	<!-- Page 导航条 -->
+	<div class="page-head">
+
+		<div class="bread-crumb pull-left">
+			<a href="../include/main.php"><i class="icon-home"></i> 首页</a> <span
+				class="divider">/</span> <a href="#" class="bread-current">问题反馈</a>
+			<span class="divider">/</span> <a href="#" class="bread-current">问题反馈列表</a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="col-md-12">
+		<div class="container-fluid">
+			<div class="widget">
+				<div class="widget-head">
+					<div class="pull-left col-md-8">
+						<form class="form-inline" action="{:U('Userfeedback/index')}" method="get">
+							<div class="row">
+								<div class="input-group col-lg-10">
+									<label class="sr-only" for="searchText">请输入问题内容名模糊检索</label> <input
+										type="text" class="form-control col-lg-3 " name="content"   
+										value="{$Think.get.content}" id="searchText"
+										placeholder="请输入问题内容名模糊检索">
+									 <span class="input-group-btn">
+									        <button type="submit" class="btn btn-primary">
+												<i class="icon-search"></i>&nbsp;查询
+		                                    </button>
+		                                    <button type="button"
+												onclick="window.location='{:U('Userfeedback/index')}'"
+												class="btn btn-danger">
+		                                        <i class="icon-trash"></i>&nbsp;清除
+		                                    </button>
+											<button type="button"
+												onclick="location.reload()"
+												class="btn btn-success">
+												<i class="icon-refresh"></i>&nbsp;刷新
+											</button>
+								      </span>
+								</div>
+							
+							</div>
+						</form>
+					</div>
+					<div class="widget-icons pull-right">
+						<a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="widget-content">
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<th><i class="icon-align-left"></i> 序号</th>
+								<th><i class="icon-user"></i> 问题内容</th>
+								<th>错误页面链接地址</th>
+								<th><i class="icon-pencil"></i> 操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<foreach name="data" item="vo">
+							<tr>
+								<td>{$vo.id}</td>
+								<td>{$vo.content}</td>
+								<td>{$vo.url}</td>
+								<td>
+									<a class="btn btn-xs btn-warning"
+									href="{:U('Userfeedback/edit',array('id'=>$vo['id']))}"><i class="icon-edit"></i>修改</a> 
+									
+									<a class="btn btn-xs btn-danger" href="{:U('Userfeedback/del',array('id'=>$vo['id']))}"><i class="icon-remove">删除</i></a>
+								</td>
+							</tr>
+							</foreach>
+						</tbody>
+					</table>
+					<ul class="pagination pull-right" id="pagination">
+					</ul>
+					<div class="widget-foot">
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Scroll to top --> <span class="totop"><a href="#"><i
+		class="icon-chevron-up"></i></a></span> </block>
+<block name="jslink">
+<script src="__PUBLIC__/admin/resouce/js/jqPaginator.js" type="text/javascript"></script><!-- page code-->
+	{$pageJs}
+</block>

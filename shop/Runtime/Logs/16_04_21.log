@@ -1,0 +1,244 @@
+[ 2016-04-21T10:03:18+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.018001s ]
+
+[ 2016-04-21T10:03:20+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-21T10:03:27+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Comments/index/id/45.html
+ERR: 非法操作:index
+
+[ 2016-04-21T10:03:42+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Comments/index/id/45.html
+ERR: 非法操作:index
+
+[ 2016-04-21T10:09:05+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:09:17+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=8 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:09:19+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=139
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=139 )  [ RunTime:0.011001s ]
+
+[ 2016-04-21T10:09:22+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=1779
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=1779 )  [ RunTime:0.002000s ]
+
+[ 2016-04-21T10:09:34+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:09:37+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:09:42+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:09:43+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-21T10:09:50+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-21T10:09:59+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-21T10:10:01+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:10:04+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-21T10:10:05+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-21T10:10:06+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:10:12+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T10:10:16+08:00 ] ::1 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-21T14:19:32+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:19:57+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:20:03+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:20:07+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:20:32+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:20:34+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:20:36+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:23:35+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:23:45+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:23:52+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:23:54+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:28:09+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:28:18+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:28:29+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:34:13+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-21T14:34:16+08:00 ] 192.168.131.251 /mz_shop/mz_shop/index.php/Home/Acount/demo4.html?upid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mz_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mz_area` WHERE ( upid=0 )  [ RunTime:0.000000s ]
+

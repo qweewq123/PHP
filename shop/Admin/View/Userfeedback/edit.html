@@ -1,0 +1,112 @@
+<extend name="Common/base"/>
+<block name="main">
+<div class="mainbar">
+    <div class="page-head">
+        <div class="bread-crumb pull-left">
+            <a href="../include/main.php"><i class="icon-home"></i> 问题反馈</a>
+            <span class="divider">/</span>
+            <a href="#" class="bread-current">问题反馈管理</a>
+            <span class="divider">/</span>
+            <a href="#" class="bread-current">问题反馈修改</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12">
+        <div class="container-fluid">
+            <div class="widget wred">
+                <div class="widget-head">
+                    <div class="pull-left">问题反馈修改</div>
+                        <div class="widget-icons pull-right">
+                            <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <div class="padd">
+                        <div class="form profile">
+                            <form class="form-horizontal" action="{:U('Userfeedback/update')}" id="saveUserFrom" method="post" onsubmit="">
+                            <input type="hidden" name="id" value="{$data.id}">
+                                <div class="form-group">
+                                <label class="control-label col-lg-3 col-lg-offset-1" for="userName">问题内容</label>
+                                    <div class="col-lg-3">
+                                        <input type="text"  class="form-control"  maxlength="32" name="content" id="" value="{$data.content}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3 col-lg-offset-1" for="userName">链接地址</label>
+                                    <div class="col-lg-3">
+                                        <input type="text"  class="form-control"  maxlength="32" name="url" id="" value="{$data.url}"/>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-lg-3 col-lg-offset-2">
+                                        <div class="btn-group" role="group" aria-label="...">
+                                            <button type="button" class="btn btn-info" onclick="window.location='{:U('Userfeedback/index')}'">
+                                                <i class="icon-fast-backward"></i>&nbsp;返回
+                                            </button>
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="icon-save"></i>&nbsp;确定修改
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll to top --> <span class="totop"><a href="#"><i
+        class="icon-chevron-up"></i></a></span> </block>
+<block name="jslink">
+    <script>
+        //初始化时间控件
+        $('#birthday').datepicker({
+            format: 'yyyy-mm-dd',
+        });
+
+        /**
+         * 表单验证
+         */
+        $('.form-horizontal').validate({
+            errorElement : 'span',
+            errorClass : 'help-block',
+            focusInvalid : true,
+            highlight : function(element) {
+                $(element).closest('.form-group').addClass('has-error');
+            },
+            rules : {
+                content : {
+                    required : true,
+                },
+            <!--
+                url:{
+                    required : true,
+                },
+                password : {
+                    required : true,
+                    rangelength:[6,16]
+                },
+                reqPwd:{
+                    required : true,
+                    rangelength:[6,16],
+                    equalTo:'#password'
+                },
+                email:{
+                    maxlength:255,
+                    email:true
+                }
+                -->
+            },
+            success : function(label) {
+                label.closest('.form-group').removeClass('has-error').addClass('has-success');
+                label.remove();
+            }
+        })
+    </script>
+</block>

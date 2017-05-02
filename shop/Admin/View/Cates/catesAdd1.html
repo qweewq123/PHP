@@ -1,0 +1,56 @@
+<extend name="Common/base" />
+<block name="main">
+<div class="mainbar">
+    <div class="page-head">
+        <div class="bread-crumb pull-left">
+           <a href="__MODULE__/Index/dashboard"><i class="icon-home"></i> 首页</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12">
+        <div class="container-fluid">
+            <div class="widget wred">
+                <div class="widget-head">
+                    <div class="pull-left">添加子分类</div>
+                        <div class="widget-icons pull-right">
+                            <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <div class="padd">
+                        <div class="form profile">
+
+                            <form class="form-horizontal" action="__CONTROLLER__/catesinsert1" id="saveUserFrom" method="post" onsubmit="">
+                            <input type="hidden" name="pid" value='{$Think.get.id}'>
+                            <input type="hidden" name="path" value='{$Think.get.path}'>
+                            
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3 col-lg-offset-1" for="username">子分类</label>
+                                    <div class="col-lg-3">
+                                        <input type="text"  class="form-control"  maxlength="32" name="catename" id="username" value=""/>
+                                    </div>
+              
+                                <div class="form-group">
+                                    <div class="col-lg-3 col-lg-offset-2">
+                                        <div class="btn-group" role="group" aria-label="...">
+                                         	
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="icon-save"></i>&nbsp;提交
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll to top --> <span class="totop"><a href="#"><i
+		class="icon-chevron-up"></i></a></span> </block>

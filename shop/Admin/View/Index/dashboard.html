@@ -1,0 +1,67 @@
+<extend name="Common/base"/>
+<block name="main">
+    <div class="mainbar">
+        <div class="page-head">
+            <div class="bread-crumb pull-left">
+                <a href="../include/main.php"><i class="icon-home"></i> 后台</a>
+                <span class="divider">/</span>
+                <a href="#" class="bread-current">首页</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- 导航条 ends -->
+        <div class="col-md-12">
+            <!-- Widget -->
+            <div class="widget">
+                <!-- Widget head -->
+                <div class="widget-head">
+                    <div class="pull-left">服务器信息</div>
+                    <div class="widget-icons pull-right">
+                        <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- Widget content -->
+                <div class="widget-content">
+                    <div class="padd">
+                        <div id="padd">
+                            <ul class="current-status">
+                                <li>
+                                    <span id="status1"></span> <span class="bold">登录时间 :<?php echo date('Y-m-d H:m:s',time()) ?> </span>
+                                </li>
+                                <li>
+                                    <span id="status1"></span> <span class="bold">服务器系统 :{$Think.server.SERVER_SOFTWARE} </span>
+                                </li>
+                                <li>
+                                    <span id="status1"></span> <span class="bold">服务器软件 : {:php_uname()} </span>
+                                </li>
+                                <li>
+                                    <span id="status2"></span> <span class="bold">PHP版本 : 5.4.16</span>
+                                </li>
+                                <li>
+                                    <span id="status3"></span> <span class="bold">MYSQL版本 : 5.6.12</span>
+                                </li>
+                                <li>
+                                    <span id="status4"></span> <span class="bold">主机名 :{$Think.server.http_host} </span>
+                                </li>
+                                <li>
+                                    <span id="status5"></span> <span class="bold">通信协议 : {$Think.server.request_scheme}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <div id="hoverdata">
+                            <div class="alert alert-success" role="alert">
+                                <span class="icon-info-sign" aria-hidden="true"></span>
+                                <span class="sr-only">错误:</span>
+                                系统提示：强烈建议您使用IE9+、新版本的chrome、safari、firfox、opera浏览器
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="totop" title="返回顶部"><a href="#"><i class="icon-chevron-up"></i></a></span>
+</block>
